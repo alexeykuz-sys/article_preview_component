@@ -104,7 +104,7 @@ body {
   letter-spacing: .5px;
 }
 
-.share-sign {
+.share-sign.show {
   background-image: url('images/icon-share.svg');
   background-repeat: no-repeat;
   position: absolute;
@@ -115,6 +115,7 @@ body {
   background-position: center;
   background-color: var(--LightGrayishBlue);
   margin-right: 20px;
+  cursor: pointer;
 }
 .card-footer-grey {
   display: none;
@@ -210,9 +211,9 @@ body {
   background-size: 135%;
   background-repeat: no-repeat;
   overflow: hidden;
+  border-radius: 10px;
 }
 .card-footer.show {
-  display: flex;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -221,21 +222,27 @@ body {
     justify-content: start;
     width: 56%;
     height: 70px;
+    margin-bottom: 20px;
 }
 
 
 .card-footer-grey.show {
   background-color: var(--VeryDarkGrayishBlue);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   display: flex;
   position: absolute;
-  bottom: 0;
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  width: 56%;
-  height: 70px;
+  width: 240px;
+    height: 51px;
+    top: 170px;
+    right: -82px;
+    justify-content: center;
+}
+
+.card-footer-grey h3 {
+  margin-left: 0;
 }
 
 
@@ -247,5 +254,15 @@ body {
   padding: 0;
   margin-top: 20px;
   
+}
+
+.share-sign-2{
+  display: none;
+}
+
+.share-sign-2.show {
+  display: flex;
+  right:83px;
+  bottom: -45px;
 }
 }
